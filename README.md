@@ -2,6 +2,8 @@
 
 Frontend to [avvhafas][avvhafas]
 
+[![alt](./image.png)]
+
 ## Installation
 
 ### Install avvahafas
