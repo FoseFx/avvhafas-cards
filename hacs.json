@@ -1,5 +1,5 @@
 {
   "name": "AVV HaFas Cards",
-  "filename": "dist/avvhafas-cards.mjs",
+  "filename": "./dist/avvhafas-cards.mjs",
   "country": "DE"
 }

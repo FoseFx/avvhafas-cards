@@ -18,7 +18,7 @@ import {
 /**
  * this is the root component
  */
-@customElement("bmn-journeys")
+@customElement("avvhafas-journeys")
 export class Journeys extends LitElement {
   @property()
   hass!: HomeAssistant; // set by home assistant on (every?) state change
@@ -131,6 +131,6 @@ export class Journeys extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "bmn-journeys": Journeys;
+    "avvhafas-journeys": Journeys;
   }
 }
