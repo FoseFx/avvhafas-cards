@@ -2,7 +2,7 @@
 
 Frontend to [avvhafas][avvhafas]
 
-[![alt](./image.png)]
+![alt](./image.png)
 
 ## Installation
 
