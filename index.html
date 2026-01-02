@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit + TS</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/components/itinerary.ts"></script>
+  </head>
+  <body style="display: flex; flex-direction: column; gap: 1rem">
+    <h1>testing ground</h1>
+    <bmn-itinerary id="it1"> </bmn-itinerary>
+    <script>
+      const it1 = [
+        {
+          start: {
+            scheduled: '08:45',
+            delay: 1,
+            stationName: 'Augustastraße',
+            platform: "H1",
+          },
+          end: {
+            scheduled: '12:45',
+            delay: 1,
+            stationName: 'Ponttor',
+            platform: "H2",
+          },
+          kind: 'bus',
+          identifier: '3A',
+          direction: 'Bushof',
+        },
+        {
+          start: {
+            scheduled: '12:50',
+            delay: 2,
+            stationName: 'Ponttor',
+            platform: "H1",
+          },
+          end: {
+            scheduled: '12:59',
+            delay: 0,
+            stationName: 'Audimax',
+            platform: "H1",
+          },
+          kind: 'bus',
+          identifier: '13A',
+          direction: 'Bushof',
+        },
+      ];
+      document.querySelector('#it1').legs = it1;
+    </script>
+
+    <bmn-itinerary id="it2"> </bmn-itinerary>
+    <script>
+      const it2 = [
+        {
+          start: {
+            scheduled: '08:45',
+            delay: 1,
+            stationName: 'Augustastraße',
+            platform: "H1",
+          },
+          end: {
+            scheduled: '12:45',
+            delay: 1,
+            stationName: 'Ponttor',
+            platform: "H1",
+          },
+          kind: 'bus',
+          identifier: '3A',
+          direction: 'Bushof',
+        },
+      ];
+      document.querySelector('#it2').legs = it2;
+    </script>
+
+    <bmn-itinerary id="it3"> </bmn-itinerary>
+    <script>
+      const it3 = [
+        {
+          start: {
+            scheduled: '08:45',
+            delay: 1,
+            stationName: 'Augustastraße',
+            platform: "H1",
+          },
+          end: {
+            scheduled: '12:45',
+            delay: 1,
+            stationName: 'Ponttor',
+            platform: "H1",
+          },
+          kind: 'bus',
+          identifier: '3A',
+          direction: 'Bushof',
+        },
+        {
+          start: {
+            scheduled: '12:50',
+            delay: 2,
+            stationName: 'Ponttor',
+            platform: "H1",
+          },
+          end: {
+            scheduled: '12:59',
+            delay: 0,
+            stationName: 'Audimax',
+            platform: "H1",
+          },
+          kind: 'bus',
+          identifier: '13A',
+          direction: 'Bushof',
+        },
+        {
+          start: {
+            scheduled: '12:50',
+            delay: 2,
+            stationName: 'Ponttor',
+            platform: "H1",
+          },
+          end: {
+            scheduled: '12:59',
+            delay: 0,
+            stationName: 'Audimax',
+            platform: "H1",
+          },
+          kind: 'train',
+          identifier: 'RE3',
+          direction: 'Bushof',
+        },
+      ];
+      document.querySelector('#it3').legs = it3;
+    </script>
+  </body>
+</html>
