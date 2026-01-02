@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
 
-const outFileName = "avvhafas-cards.mjs";
+const outFileName = "avvhafas-cards.js";
 
 export default defineConfig(({ mode }) => {
   const isDev = mode === 'development';
