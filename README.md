@@ -25,7 +25,14 @@ See [avvhafas][avvhafas]' README.
 
 ### Configure journey card
 
-TODO
+Create a new custom yaml card using
+
+```yaml
+type: custom:avvhafas-journeys
+entity: sensor.<name of sensor>
+```
+
+Once create you can use the UI to configure the card.
 
 ## Disclaimers
 
